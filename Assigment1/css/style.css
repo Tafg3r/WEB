@@ -33,11 +33,11 @@ nav a:hover {
 .person {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .person img {
-  width: 150px;
+  width: 160px;
   height: 200px;
   margin-right: 20px;
 }
@@ -63,4 +63,32 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.hobby {
+  text-align: left;
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hobby img {
+  float: left;
+  margin-right: 15px;
+  border-radius: 5px;
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.content-person {
+  align-items: center;
+}
+
+.contact-info-container {
+  align-items: center;
+  justify-items: center;
+  place-items: center;
+  text-align: center;
 }
