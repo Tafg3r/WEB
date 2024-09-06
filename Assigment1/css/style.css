@@ -86,9 +86,44 @@ footer {
   align-items: center;
 }
 
-.contact-info-container {
+.contact-info-table {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-  place-items: center;
+}
+
+.contact-info-table table {
+  border-spacing: 40px 5px; /* Горизонтальное расстояние 10px между ячейками и 0px вертикальное расстояние */
+  border-collapse: separate;
   text-align: center;
+  line-height: 10px;
+}
+
+.contact-info-form {
+   display: flex;
+   flex-direction: column; /* Изменить направление на колонку */
+   align-items: center; /* Выравнивание по центру */
+ }
+
+.contact-info-form input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #edf3ff;
+}
+
+.contact-info-form input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: #edf3ff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-info-form input[type="submit"]:hover {
+  background-color: #0056b3;
 }

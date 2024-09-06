@@ -12,17 +12,33 @@
   <a href="hobbies.html">Hobbies</a>
 </nav>
 <div class="content">
-  <div class="contact-info-container">
-    <div class="contact-info">
-      <br> <br>
-      <h2>Paliyev Dmitriy</h2>
-      <p><strong>Phone:</strong> +7 777 123 4567</p>
-      <p><strong>Email:</strong> dmitriy.paliyev@example.com</p>
-      <br> <br>
-      <h2>Yan Nevezhin</h2>
-      <p><strong>Phone:</strong> +7 777 987 6543</p>
-      <p><strong>Email:</strong> yan.nevezhin@example.com</p>
-    </div>
+  <br> <br>
+  <div class="contact-info-table">
+
+    <table>
+      <tr>
+        <td> <h2>Paliyev Dmitriy</h2> </td>
+        <td> <h2>Yan Nevezhin</h2> </td>
+      </tr>
+      <tr>
+        <td> <p><strong>Phone:</strong> +7 777 123 4567</p> </td>
+        <td> <p><strong>Phone:</strong> +7 777 987 6543</p> </td>
+      </tr>
+      <tr>
+        <td> <p><strong>Email:</strong> dmitriy.paliyev@example.com</p> </td>
+        <td> <p><strong>Email:</strong> yan.nevezhin@example.com</p> </td>
+      </tr>
+    </table>
+  </div>
+  <br> <br>
+  <div class="contact-info-form">
+    <form action="mailto:dmitriy_yan.common@example.com" method="post" enctype="multipart/form-data" target="_blank" name="contactForm" autocomplete="on">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"> <br>
+      <label for="text">Message:</label>
+      <input type="text" id="text" name="message"> <br>
+      <input type="submit" value="Submit">
+    </form>
   </div>
 </div>
 
