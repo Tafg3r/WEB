@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  color: #d9f0ee;
   background-image: url('../static/img/dark-background-abstract-background-network-3d-background-3840x2160-8324.png');
   background-size: cover;
   background-position: center;
@@ -17,7 +17,7 @@ header {
 
 nav {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 1px;
 }
 
 nav a {
@@ -41,10 +41,9 @@ nav a:hover {
 .person img {
   margin-left: 30px;
   border-radius: 10px;
-  border: 2px solid #fff;
+  border: 2px solid #c7bede;
   width: 160px;
   height: 200px;
-  margin-right: 20px;
 }
 
 h2 {
@@ -76,7 +75,7 @@ footer {
   margin: 20px 0;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 .hobby img {
   float: left;
@@ -98,7 +97,7 @@ footer {
 }
 
 .contact-info-table table {
-  border-spacing: 40px 5px; /* Горизонтальное расстояние 10px между ячейками и 0px вертикальное расстояние */
+  border-spacing: 40px 5px;
   border-collapse: separate;
   text-align: center;
   line-height: 10px;
@@ -106,8 +105,8 @@ footer {
 
 .contact-info-form {
    display: flex;
-   flex-direction: column; /* Изменить направление на колонку */
-   align-items: center; /* Выравнивание по центру */
+   flex-direction: column;
+   align-items: center;
  }
 
 .contact-info-form input[type="text"] {
@@ -130,5 +129,5 @@ footer {
 }
 
 .contact-info-form input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #2887f1;
 }
