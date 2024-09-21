@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Enhanced Webpage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Our site</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Main page</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="hero">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <text class="d-block w-100"> Slide 1 </text>
+      </div>
+      <div class="carousel-item">
+        <text class="d-block w-100"> Slide 2 </text>
+      </div>
+      <div class="carousel-item">
+        <text class="d-block w-100"> Slide 3 </text>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<section class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6 mb-4">
+      <h2>Yan</h2>
+      <p>Yan. 19 years old. Writes backend on Golang language</p>
+      <button class="btn btn-primary">Learn More</button>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <h2>Dima</h2>
+      <p>Dima. 19 years old. Very modest guy with great potential.</p>
+      <button class="btn btn-primary">Learn More</button>
+    </div>
+  </div>
+</section>
+<section class="container mt-5">
+  <div class="row">
+    <div class="col-lg-4 mb-4">
+      <div class="card">
+        <img src="https://avatars.dzeninfra.ru/get-ynews/6064680/262030d8115509424b7e70fee846f649/992x496" class="card-img-top" alt="Card 1">
+        <div class="card-body">
+          <h5 class="card-title">Sport</h5>
+          <p class="card-text">Sports help us stay active and healthy. Our team loves to play tennis with friends, especially on weekends.
+            These activities not only strengthen our bodies, but also contribute to a good mood.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmr0CivAzlx5_0UWIP56yUceW1ymdSf9Gzg&s?height=200&width=300" class="card-img-top" alt="Card 2">
+        <div class="card-body">
+          <h5 class="card-title">Programming</h5>
+          <p class="card-text">Programming is our passion. We enjoy coding and solving problems.
+            It is an exciting process that allows us to unleash our creativity and reach new heights.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+      <div class="card">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/649aeb64570483ef955d4176/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" class="card-img-top" alt="Card 3">
+        <div class="card-body">
+          <h5 class="card-title">Card 3</h5>
+          <p class="card-text">Books bring meaning to life, help us understand various topics and delve deeper into ourselves. I especially enjoy reading fiction and fantasy literature.
+            These books open up new worlds and broaden our horizons.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="container mt-5">
+  <h2 class="mb-4">Contact Us</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
+
+<footer class="bg-light mt-5 py-3">
+  <div class="container text-center">
+    <p>&copy; 2024 Your Company Name. Created by Yan, Dmitrii</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
