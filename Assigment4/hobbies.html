@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Hobbies</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #d9f0ee;
+      background-color: #140007;
+      background-size: cover;
+      background-position: center;
+      overflow-y: auto;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 1px;
+    }
+
+    nav a {
+      background: #444;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #666;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .hobby {
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.3);
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+    }
+
+    .hobby img {
+      margin-right: 15px;
+      border-radius: 5px;
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #numbers-input {
+      width: 100%;
+      max-width: 300px;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #edf3ff;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: #fff;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #2887f1;
+    }
+
+    .todo-list {
+      margin: 20px 0;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+    }
+
+    .todo-list h2 {
+      margin-top: 0;
+    }
+
+    .todo-list ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .todo-list ul li {
+      margin: 10px 0;
+    }
+
+    .todo-list input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h3>Our Teams <Hobbi></Hobbi></h3>
+  <div id="current-time"></div>
+  <button id="change-bg">Change BG Color</button>
+</header>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="contactme.html">Contact Me</a>
+</nav>
+
+<div class="container">
+  <div class="hobby">
+    <img src="https://imageio.forbes.com/specials-images/imageserve/649aeb64570483ef955d4176/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" alt="Books">
+    <div>
+      <h2>Reading Books</h2>
+      <p>
+        Books bring meaning to life, help us understand various topics and delve deeper into ourselves. I especially enjoy reading fiction and fantasy literature.
+        These books open up new worlds. <br> More: <a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D1%82%D0%B5%D0%BD%D0%B8%D0%B52">click.</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="hobby">
+    <img src="https://avatars.dzeninfra.ru/get-ynews/6064680/262030d8115509424b7e70fee846f649/992x496" alt="Sports">
+    <div>
+      <h2>Playing Sports</h2>
+      <p>
+        Sports help us stay active and healthy. Our team loves to play tennis with friends, especially on weekends.
+        These activities not only strengthen our bodies, but also contribute to a good mood. <br>
+        More: <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%BE%D1%80%D1%82">click.</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="hobby">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmr0CivAzlx5_0UWIP56yUceW1ymdSf9Gzg&s" alt="Programming">
+    <div>
+      <h2>Programming</h2>
+      <p>
+        Programming is our passion. We enjoy coding and solving problems.
+        It is an exciting process that allows us to unleash our creativity and reach new heights. <br>
+        More: <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">click.</a>
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <h2>Number Sorting Tool</h2>
+    <input type="text" id="numbers-input" placeholder="Enter numbers separated by commas">
+    <button id="sort-asc">Sort Ascending</button>
+    <button id="sort-desc">Sort Descending</button>
+    <p id="sorted-output"></p>
+  </div>
+
+  <div class="todo-list">
+    <h2>To-Do List: Our Hobbies</h2>
+    <ul id="task-list">
+      <li>
+        <input type="checkbox" id="hobby1">
+        <label for="hobby1">Reading Books</label>
+      </li>
+      <li>
+        <input type="checkbox" id="hobby2">
+        <label for="hobby2">Playing Sports</label>
+      </li>
+      <li>
+        <input type="checkbox" id="hobby3">
+        <label for="hobby3">Programming</label>
+      </li>
+    </ul>
+    <input type="text" id="new-task-input" placeholder="Add a new task...">
+    <button id="add-task-btn">Add Task</button>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Our Personal Webpage</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
