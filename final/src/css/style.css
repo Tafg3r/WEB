@@ -1,0 +1,180 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #d9f0ee;
+  background-size: cover;
+  overflow-y: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #2c2f33;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header button {
+  background-color: #6c757d;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #5a6268;
+}
+
+nav {
+  text-align: center;
+  margin: 20px 1px;
+}
+
+nav a {
+  background: #444;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #666;
+}
+
+.hobby {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.content { flex: 1; }
+
+.content-person {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.person img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.info {
+  margin-top: 10px;
+}
+
+.person {
+  text-align: center;
+}
+
+.hobby img {
+  margin-right: 15px;
+  border-radius: 5px;
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#numbers-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #edf3ff;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s; /* Добавлено свойство transform для анимации */
+}
+
+button:hover {
+  background-color: #2887f1;
+  transform: scale(1.05); /* Увеличение размера кнопки при наведении */
+}
+
+.todo-list {
+  margin: 20px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.todo-list h2 {
+  margin-top: 0;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list ul li {
+  margin: 10px 0;
+}
+
+.todo-list input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.person img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.info {
+  margin-top: 10px;
+}
